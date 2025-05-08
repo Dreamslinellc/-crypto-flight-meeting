@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Vuela al Paraíso! | Dreamsline LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+    .hero {
+      background: url('background.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 5px #000;
+      padding: 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    .form-section {
+      background-color: rgba(0,0,0,0.7);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #ffd700;
+      color: #000;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>¡Vuela al Paraíso!</h1>
+    <p>Chárter exclusivo a República Dominicana — Diciembre 2025</p>
+
+    <div class="form-section">
+      <h2>Registra tu interés</h2>
+      <form action="mailto:dreamslinellc@dreamslinellc.com" method="POST" enctype="text/plain">
+        <input type="text" name="Nombre" placeholder="Tu nombre" required>
+        <input type="email" name="Email" placeholder="Tu correo electrónico" required>
+        <textarea name="Mensaje" rows="4" placeholder="Cuéntanos cuántas personas viajarían o desde qué ciudad."></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
