@@ -1,103 +1,89 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Crypto Flight Meeting | Powered by Dreamsline LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vuelo Chárter a República Dominicana - Diciembre 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     body {
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0d1117;
-      color: #c9d1d9;
+      background: url('https://images.unsplash.com/photo-1519923042073-bfef6fa8c38d') center/cover no-repeat;
+      color: #fff;
     }
-    header {
-      background-image: url('https://images.unsplash.com/photo-1529074963764-98f45c47344b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
-      background-size: cover;
-      background-position: center;
-      color: white;
+    .overlay {
+      background: rgba(0, 0, 0, 0.65);
+      padding: 4rem 2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    header div {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 60px 20px;
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 1rem;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.8em;
-      color: #58a6ff;
-    }
-    header p {
-      font-size: 1.3em;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .section h2 {
-      color: #58a6ff;
-      margin-bottom: 20px;
-    }
-    .btn {
-      display: inline-block;
-      background-color: #238636;
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background-color: #2ea043;
-    }
-    footer {
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
       text-align: center;
-      padding: 20px;
-      color: #8b949e;
-      font-size: 0.9em;
-      background-color: #161b22;
+      margin-bottom: 2rem;
+    }
+    form {
+      background: #fff;
+      color: #000;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 100%;
+    }
+    form input, form select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    form button {
+      background: #d7263d;
+      color: #fff;
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #ccc;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div>
-      <h1>Crypto Flight Meeting</h1>
-      <p>Where ideas take off at 35,000 feet</p>
-    </div>
-  </header>
-
-  <section class="section">
-    <h2>What is the Crypto Flight Meeting?</h2>
-    <p>
-      An exclusive in-flight event where blockchain founders, investors, and innovators come together to pitch, connect, and accelerate deals. While cruising above the clouds, you'll get the chance to:
-    </p>
-    <ul>
-      <li>Pitch your project during “air pitch” sessions</li>
-      <li>Network with selected top-tier crypto leaders</li>
-      <li>Join mentorship and funding breakout sessions onboard</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Why in the air?</h2>
-    <p>
-      The airborne setting removes distractions, fosters trust, and fast-tracks decisions. It's the ideal environment to validate ideas, close deals, and expand your network with Web3 power players.
-    </p>
-  </section>
-
-  <section class="section">
-    <h2>Reserve Your Interest</h2>
-    <p>Submit your details and we'll notify you when the next flight opens for applications:</p>
-    <a href="https://forms.gle/Km7d2P5DQdcwMAtq5" class="btn" target="_blank">Express Interest</a>
-  </section>
-
-  <footer>
-    © 2025 Crypto Flight Meeting — Powered by Dreamsline LLC
-  </footer>
+  <div class="overlay">
+    <h1>🎄 Vuela a República Dominicana – Diciembre 2025</h1>
+    <p>Vuelo chárter directo desde Europa. Incluye 1 maleta, catering a bordo. ¡Desde solo 690€!<br>Deja tus datos sin compromiso.</p>
+    <form action="https://formspree.io/f/mayvlqoo" method="POST">
+      <input type="text" name="name" placeholder="Nombre completo" required />
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+      <input type="tel" name="phone" placeholder="Número de teléfono" />
+      <select name="departure_city" required>
+        <option value="">Ciudad de salida</option>
+        <option value="Barcelona">Barcelona</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Otra">Otra</option>
+      </select>
+      <input type="number" name="people" placeholder="¿Cuántos pasajeros?" min="1" required />
+      <button type="submit">Enviar interés</button>
+    </form>
+    <div class="footer">Te contactaremos cuando se confirme el vuelo. Plazas limitadas.</div>
+  </div>
 </body>
 </html>
