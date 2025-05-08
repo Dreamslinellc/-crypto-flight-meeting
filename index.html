@@ -1,89 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vuelo Chárter a República Dominicana - Diciembre 2025</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>¡Vuela al Paraíso! | Dreamsline LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
+    body, html {
       margin: 0;
-      background: url('https://images.unsplash.com/photo-1519923042073-bfef6fa8c38d') center/cover no-repeat;
-      color: #fff;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
     }
-    .overlay {
-      background: rgba(0, 0, 0, 0.65);
-      padding: 4rem 2rem;
-      min-height: 100vh;
+    .hero {
+      background: url('background.jpg') no-repeat center center/cover;
+      height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-    }
-    h1 {
-      font-size: 2.6rem;
-      margin-bottom: 1rem;
+      align-items: center;
+      text-shadow: 2px 2px 5px #000;
+      padding: 20px;
       text-align: center;
     }
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      text-align: center;
-      margin-bottom: 2rem;
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
     }
-    form {
-      background: #fff;
-      color: #000;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      max-width: 400px;
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    .form-section {
+      background-color: rgba(0,0,0,0.7);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input, textarea {
       width: 100%;
-    }
-    form input, form select {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-    form button {
-      background: #d7263d;
-      color: #fff;
+      padding: 10px;
+      margin: 8px 0;
       border: none;
-      padding: 0.75rem;
-      font-size: 1rem;
-      border-radius: 6px;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #ffd700;
+      color: #000;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
     }
-    .footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #ccc;
-      text-align: center;
+    button:hover {
+      background-color: #ffcc00;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>🎄 Vuela a República Dominicana – Diciembre 2025</h1>
-    <p>Vuelo chárter directo desde Europa. Incluye 1 maleta, catering a bordo. ¡Desde solo 690€!<br>Deja tus datos sin compromiso.</p>
-    <form action="https://formspree.io/f/mayvlqoo" method="POST">
-      <input type="text" name="name" placeholder="Nombre completo" required />
-      <input type="email" name="email" placeholder="Correo electrónico" required />
-      <input type="tel" name="phone" placeholder="Número de teléfono" />
-      <select name="departure_city" required>
-        <option value="">Ciudad de salida</option>
-        <option value="Barcelona">Barcelona</option>
-        <option value="Madrid">Madrid</option>
-        <option value="Otra">Otra</option>
-      </select>
-      <input type="number" name="people" placeholder="¿Cuántos pasajeros?" min="1" required />
-      <button type="submit">Enviar interés</button>
-    </form>
-    <div class="footer">Te contactaremos cuando se confirme el vuelo. Plazas limitadas.</div>
+
+  <div class="hero">
+    <h1>¡Vuela al Paraíso!</h1>
+    <p>Chárter exclusivo a República Dominicana — Diciembre 2025</p>
+
+    <div class="form-section">
+      <h2>Registra tu interés</h2>
+      <form action="mailto:dreamslinellc@dreamslinellc.com" method="POST" enctype="text/plain">
+        <input type="text" name="Nombre" placeholder="Tu nombre" required>
+        <input type="email" name="Email" placeholder="Tu correo electrónico" required>
+        <textarea name="Mensaje" rows="4" placeholder="Cuéntanos cuántas personas viajarían o desde qué ciudad."></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </div>
+
 </body>
 </html>
